@@ -15,7 +15,7 @@ resource "aws_iam_policy" "basically_allow_all" {
     {
       "Action": "*",
       "Effect": "Allow",
-      "Resource": "*"
+      "Resource": "Some policy with a long description that denies anything"
     }
   ]
 }
