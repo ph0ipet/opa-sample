@@ -5,7 +5,8 @@ provider "aws" {
 
 resource "aws_security_group_rule" "my-rule" {
     type        = "ingress"
-    cidr_blocks = ["0.0.0.0/0"]
+    description = "Internet security group"
+    cidr_blocks = ["10.0.0.0/16"]
 }
 
 resource "aws_iam_policy" "basically_deny_all" {
